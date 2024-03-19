@@ -1,14 +1,15 @@
-from collections import Counter
-from typing import Dict, Sequence
-from pathlib import Path
-import json
 import argparse
+import json
+from collections import Counter
+from pathlib import Path
+from typing import Dict, Sequence
 
 
 def count_words(text: str) -> Dict[str, int]:
-    """Count the number of times each word appears in a
-    file and save the 10 most common words.
     """
+    Count the number of times each word appears in a file and save the 10 most common words.
+    """
+
     delimiters = ". , ; : ? $ @ ^ < > # % ` ! * - = ( ) [ ] { } / \" '".split()
 
     counts = Counter()

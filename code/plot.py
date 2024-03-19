@@ -1,8 +1,9 @@
-import matplotlib.pyplot as plt
-from typing import Dict, Sequence, Optional
-import json
 import argparse
+import json
 from pathlib import Path
+from typing import Dict, Optional, Sequence
+
+import matplotlib.pyplot as plt
 
 
 def plot(data: Dict[str, int], filename: Optional[Path] = None):
