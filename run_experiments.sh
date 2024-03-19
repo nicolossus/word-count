@@ -1,8 +1,16 @@
 #! /bin/bash
 
-DATADIR="data"
-RESULTSDIR="results"
-FIGDIR="figures"
+if [[ -z "${DATADIR}" ]]; then
+    DATADIR="data"
+fi
+
+if [[ -z "${RESULTSDIR}" ]]; then
+    RESULTSDIR="results"
+fi
+
+if [[ -z "${FIGDIR}" ]]; then
+    FIGDIR="figures"
+fi
 
 mkdir -p ${RESULTSDIR}
 mkdir -p ${FIGDIR}
